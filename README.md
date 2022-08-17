@@ -1,2 +1,3 @@
 # cosmo_site
-Applied html, css, jquery. The main theme is flights to the moon and other planets.
+Applied HTML, SCSS, Grid, Flex Box, jquery, BEM, adaptive layout. 
+The main theme is flights to the moon and other planets.
