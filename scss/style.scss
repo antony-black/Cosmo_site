@@ -1,0 +1,118 @@
+@import '_variables';
+@import '_mixins';
+@import '_header';
+@import '_about';
+@import '_how-to';
+@import '_to__book';
+@import '_special-offer';
+@import '_services';
+@import '_slider';
+@import '_contacts';
+@import '_footer';
+
+
+
+
+
+
+
+
+
+
+
+// ================================
+@font-face {
+  font-family: 'sf-pro-display';
+  src:
+     url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+     url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sf-pro-display';
+  src:
+     url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
+     url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'spaceagecyrillic';
+  src:
+     url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+     url('../fonts/spaceagecyrillic-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+// ==============================
+body{
+  font-family:'sf-pro-display';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+ }
+ 
+ a{
+   text-decoration: none;
+   color: inherit;
+ }
+ 
+ button{
+   background: transparent;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+   color: inherit;
+ }
+ 
+ .container{
+   max-width: 1220px;
+   padding: 0 10px;
+   margin: 0 auto;
+ }
+ 
+ .title{
+   font-family: $ff-2;
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 48px;
+ }
+ @media (max-width: 570px) {
+  .title{
+    font-size: 25px;
+  }
+}
+//  @media (max-width: 450px) {
+//    .title{
+//      font-size: 34px;
+//    }
+//  }
+ 
+ .button {
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   text-transform: uppercase;
+   border: 1px solid #fff;
+   padding: 20px 45px;
+   transition: all .4s;
+
+   &:hover{
+      font-family: $ff-2;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, .6);
+      box-shadow: 5px 5px 5px rgba(255, 255, 255, .6);
+   }
+
+   &:active{
+     color: rgba(3, 108, 202, .5);
+     border: 3px solid rgba(3, 108, 202, .6);
+     box-shadow: 5px 5px 5px rgba(3, 108, 202, .6);
+   }
+ }

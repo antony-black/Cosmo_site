@@ -1,0 +1,123 @@
+.contacts {
+  padding: 100px 0;
+  background: $color-2;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__box {
+    width: 500px;
+  }
+
+  &__title {
+    font-family: $ff-2;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 80px;
+  }
+
+  &__form {
+  }
+
+  &__input {
+    width: 100%;
+    background: $color-2;
+    border-bottom: 1px solid $color-3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-3;
+    padding: 20px 20px 20px 0;
+    margin-bottom: 50px;
+
+    &::placeholder{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &:focus::placeholder{
+      text-shadow: 5px 5px 15px rgba(255, 255, 255, .9)
+    }
+
+    &:focus{
+      box-shadow: 5px 5px 15px rgba(255, 255, 255, .6);
+      border-radius: 35px;
+      padding-left: 20px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__guarantees {
+    width: 600px;
+    padding-left: 15px;
+    position: relative;
+
+    &:hover::before{
+      content: '';
+      width: 120px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, .6);
+      box-shadow: 3px 9px 15px rgba(255, 255, 255, .6);
+      position: absolute;
+      top: 37%;
+      right: 70px;
+    }
+  }
+
+  &__img{
+    display: flex;
+    margin-left: auto;
+    max-width: 100%;
+    position: relative;
+  }
+}
+// ========================
+@media (max-width: 900px) {
+  .contacts{
+    padding: 50px 0;
+  }
+  .contacts__inner{
+    display: block;
+  }
+  .contacts__box{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .contacts__guarantees{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+@media (max-width: 400px){
+  .contacts__guarantees:hover::before{
+    top: 42%;
+  }
+}
+@media (max-width: 370px){
+  .contacts__guarantees:hover::before{
+    top: 46%;
+    right: 70px;
+  }
+}
+@media (max-width: 340px){
+  .contacts__guarantees:hover::before{
+    top: 50%;
+    right: 56px;
+  }
+}

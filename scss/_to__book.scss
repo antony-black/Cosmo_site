@@ -1,0 +1,52 @@
+.to-book {
+  background: url('../img/to-book/to-book-bg.jpg') top center/cover no-repeat;
+
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding: 100px 0;
+  }
+
+  &__text {
+    width: 165px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+  &__text + &__text{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+// ===========================
+@media (max-width: 970px) {
+  .to-book__inner{
+    display: block;
+  }
+  .to-book__title{
+    padding: 50px 0;
+  }
+  .to-book__text{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 870px){
+  .to-book{
+    background-position: left;
+  }
+}
+@media (max-width: 570px){
+  .to-book__title{
+    font-size: 25px;
+  }
+}
+
+
